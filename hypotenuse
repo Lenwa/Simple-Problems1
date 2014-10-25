@@ -1,0 +1,11 @@
+import math
+
+def hypotenuse():
+	x = int(raw_input("Enter a value for leg a.\n"))
+	y = int(raw_input("Enter a value for leg b.\n"))
+	hypotenuse = math.sqrt(x**2 + y**2)
+	print hypotenuse
+
+print "Enter two legs of a right triangle to compute the hypotenuse."
+hypotenuse()
+	
