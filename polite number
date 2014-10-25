@@ -1,0 +1,12 @@
+def polite_number():
+	x = raw_input("Enter a number to find it's polite number.\n")
+	if x == "done":
+		print "Goodbye!"
+		exit()
+	if x != "done":
+		x = int(x)
+	x = x + (x + 1)
+	print x
+	polite_number()
+			
+polite_number()
