@@ -1,0 +1,27 @@
+def cookie_counter():
+    nop = int(raw_input("Enter # of people.\n"))
+    noc = int(raw_input("Enter # of cookies.\n"))
+    x = noc / nop 
+    y = noc % nop
+	
+    if y == 0 :
+	    print "Cookies each: %s.\n" % x
+	    print "Cookies left: %s.\n" % y 
+	    qt()
+		
+    else :
+	    print "Cookies each: %s.\n" % x 
+	    print "Cookies left: %s.\n" % y
+	    qt()
+
+def qt():
+    quit = raw_input("Quit? yes or no \n")
+    if quit == "yes":
+	    print "Goodbye!"
+	    exit()
+    elif quit == "no": 
+	    cookie_counter()
+    else:
+	    print "Invalid. Input yes or no."
+	    qt()
+cookie_counter()
