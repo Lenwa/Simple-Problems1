@@ -1,0 +1,17 @@
+across = '+----+----+'
+down = '|    |    |'
+
+def downp():
+	print down
+	print down 
+	print down 
+	print down
+	
+def grid():
+	print across
+	downp()
+	print across
+	downp()
+	print across
+
+grid()
