@@ -1,0 +1,18 @@
+def find(word, letter, search_start):
+    index = 0 + search_start
+    while index < len(word):
+        if word[index] == letter:
+            print index
+            return index
+        index = index + 1 
+    return -1 
+
+find('mothersucka', 'e', 6) # third arguemnt states where index search begins
+
+def count(word, letter):
+    count = 0
+    for correct_letter in word:
+        if correct_letter == letter:
+            count = count + 1 
+    print count 
+count('loser', 'a')
