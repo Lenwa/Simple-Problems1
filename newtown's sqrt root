@@ -1,0 +1,16 @@
+import math
+def newton_sqrt():
+	a = float(raw_input("Find this number\'s sqaure root.\n"))
+	x = float(raw_input("Input estimate of sqaure root.\n"))
+	y = (x + a / x) / 2
+	while y != x:
+		x = y 
+		y = (x + a / x) /2
+		z = math.sqrt(a)
+		w = abs(y - z)
+		print a , y , z, w 
+		epsilon = 0.01
+		if abs(y-x) < epsilon:
+			break
+		print y , z
+newton_sqrt()
