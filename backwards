@@ -1,0 +1,9 @@
+def backwards():
+    n = 'fruit'
+    index = -1
+    while abs(index) - 1 < len(n):
+        letter = n[index]
+        print letter
+        index =  index - 1
+
+backwards()
